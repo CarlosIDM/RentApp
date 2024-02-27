@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentApp", "RentApp\RentApp.csproj", "{441BE2F1-AA12-496A-88BA-361372A8BD28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassLibraries", "ClassLibraries", "{15FC6B16-FA32-477F-926A-931BAEE0C929}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentApp.Repository", "ClassLibraries\RentApp.Repository\RentApp.Repository.csproj", "{2EEB2980-ABEA-4A3A-BD4F-58AA55D40FEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentApp.DataAccessLayer", "ClassLibraries\RentApp.DataAccessLayer\RentApp.DataAccessLayer.csproj", "{26A97546-22CC-499E-9E13-DAA5C7182CE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentApp.Entities", "ClassLibraries\RentApp.Entities\RentApp.Entities.csproj", "{2B95D1D6-41F2-4A0A-8FF3-F71CD3A69396}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentApp.BussinesLayer", "ClassLibraries\RentApp.BussinesLayer\RentApp.BussinesLayer.csproj", "{EF6A5964-25B6-44A3-A0A0-279BF5B1F14B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentApp.ViewModels", "ClassLibraries\RentApp.ViewModels\RentApp.ViewModels.csproj", "{384B01DD-9901-4A97-9657-957B102812ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{441BE2F1-AA12-496A-88BA-361372A8BD28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441BE2F1-AA12-496A-88BA-361372A8BD28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441BE2F1-AA12-496A-88BA-361372A8BD28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441BE2F1-AA12-496A-88BA-361372A8BD28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EEB2980-ABEA-4A3A-BD4F-58AA55D40FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EEB2980-ABEA-4A3A-BD4F-58AA55D40FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EEB2980-ABEA-4A3A-BD4F-58AA55D40FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EEB2980-ABEA-4A3A-BD4F-58AA55D40FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26A97546-22CC-499E-9E13-DAA5C7182CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A97546-22CC-499E-9E13-DAA5C7182CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A97546-22CC-499E-9E13-DAA5C7182CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A97546-22CC-499E-9E13-DAA5C7182CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B95D1D6-41F2-4A0A-8FF3-F71CD3A69396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B95D1D6-41F2-4A0A-8FF3-F71CD3A69396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B95D1D6-41F2-4A0A-8FF3-F71CD3A69396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B95D1D6-41F2-4A0A-8FF3-F71CD3A69396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF6A5964-25B6-44A3-A0A0-279BF5B1F14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6A5964-25B6-44A3-A0A0-279BF5B1F14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF6A5964-25B6-44A3-A0A0-279BF5B1F14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6A5964-25B6-44A3-A0A0-279BF5B1F14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{384B01DD-9901-4A97-9657-957B102812ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384B01DD-9901-4A97-9657-957B102812ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384B01DD-9901-4A97-9657-957B102812ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384B01DD-9901-4A97-9657-957B102812ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2EEB2980-ABEA-4A3A-BD4F-58AA55D40FEA} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
+		{26A97546-22CC-499E-9E13-DAA5C7182CE3} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
+		{2B95D1D6-41F2-4A0A-8FF3-F71CD3A69396} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
+		{EF6A5964-25B6-44A3-A0A0-279BF5B1F14B} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
+		{384B01DD-9901-4A97-9657-957B102812ED} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E32C643-1A32-4C4F-9B18-1FE6A29A5C70}
+	EndGlobalSection
+EndGlobal
