@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RentApp.Languages\RentApp.Languages.csproj" />
+    <ProjectReference Include="..\RentApp.Models\RentApp.Models.csproj" />
+  </ItemGroup>
+
 </Project>

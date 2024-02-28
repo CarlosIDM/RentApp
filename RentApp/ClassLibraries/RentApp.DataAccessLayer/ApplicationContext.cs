@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RentApp.Entities.Tables;
 
 namespace RentApp.DataAccessLayer
 {
@@ -12,5 +13,8 @@ namespace RentApp.DataAccessLayer
         {
             base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<User> Users { get; set; }
+        public DbSet<Roles>Roles { get; set; }
     }
 }

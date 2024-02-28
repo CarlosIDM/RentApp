@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Tables\" />
+    <ProjectReference Include="..\RentApp.Models\RentApp.Models.csproj" />
   </ItemGroup>
 
 </Project>

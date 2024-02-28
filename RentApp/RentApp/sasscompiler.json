@@ -1,0 +1,20 @@
+{
+  "Source": "Styles",
+  "Target": "wwwroot/AccessDenied",
+  "Arguments": "--style=compressed",
+  "IncludePaths": [ "Styles" ],
+
+  "Compilations": [
+    {
+      "Source": "wwwroot/AccessDenied/index.scss",
+      "Target": "wwwroot/AccessDenied/index.css"
+    }
+  ],
+
+  "Configurations": {
+    "Debug": {
+      "Arguments": "--style=expanded"
+    }
+  }
+}
+

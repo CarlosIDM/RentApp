@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentApp.BussinesLayer", "Cl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentApp.ViewModels", "ClassLibraries\RentApp.ViewModels\RentApp.ViewModels.csproj", "{384B01DD-9901-4A97-9657-957B102812ED}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentApp.Languages", "ClassLibraries\RentApp.Languages\RentApp.Languages.csproj", "{D12B7BD0-A1C3-46D7-9843-2A27860CE43F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentApp.Models", "ClassLibraries\RentApp.Models\RentApp.Models.csproj", "{CD5CBD05-B64B-4150-A535-2F0D9285A7CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,14 @@ Global
 		{384B01DD-9901-4A97-9657-957B102812ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{384B01DD-9901-4A97-9657-957B102812ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{384B01DD-9901-4A97-9657-957B102812ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D12B7BD0-A1C3-46D7-9843-2A27860CE43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12B7BD0-A1C3-46D7-9843-2A27860CE43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12B7BD0-A1C3-46D7-9843-2A27860CE43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12B7BD0-A1C3-46D7-9843-2A27860CE43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD5CBD05-B64B-4150-A535-2F0D9285A7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5CBD05-B64B-4150-A535-2F0D9285A7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5CBD05-B64B-4150-A535-2F0D9285A7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5CBD05-B64B-4150-A535-2F0D9285A7CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +69,8 @@ Global
 		{2B95D1D6-41F2-4A0A-8FF3-F71CD3A69396} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
 		{EF6A5964-25B6-44A3-A0A0-279BF5B1F14B} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
 		{384B01DD-9901-4A97-9657-957B102812ED} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
+		{D12B7BD0-A1C3-46D7-9843-2A27860CE43F} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
+		{CD5CBD05-B64B-4150-A535-2F0D9285A7CB} = {15FC6B16-FA32-477F-926A-931BAEE0C929}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E32C643-1A32-4C4F-9B18-1FE6A29A5C70}

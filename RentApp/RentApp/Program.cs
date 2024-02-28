@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using RentApp.BussinesLayer.Helpers;
+using RentApp.BussinesLayer.Login;
 using RentApp.DataAccessLayer;
 using RentApp.Repository;
 
@@ -6,11 +8,20 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+string connectionStrings = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connectionStrings));
+#if DEBUG
+builder.Services.AddSassCompiler();
+#endif
 
 #region Repositories
 builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+#endregion
+
+#region Class
+builder.Services.AddTransient<LoginBL>();
+builder.Services.AddTransient<IAuthenticationTokens, AuthenticationTokens>();
+builder.Services.AddTransient<IRulesValidations, RulesValidations>();
 #endregion
 
 var app = builder.Build();
@@ -35,8 +46,12 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapAreaControllerRoute(
-                     name: "areas",
-                     areaName: "areas",
-                      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                     name: "myareasadministrator",
+                     areaName: "Administrator",
+                      pattern: "{area:exists}/{controller=Index}/{action=Index}/{id?}");
+app.MapAreaControllerRoute(
+					 name: "myareasuser",
+					 areaName: "User",
+					  pattern: "{area:exists}/{controller=Index}/{action=Index}/{id?}");
 
 app.Run();

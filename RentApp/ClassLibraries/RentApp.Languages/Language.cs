@@ -5,6 +5,18 @@ namespace RentApp.Languages
 {
     public class Language
     {
+        private static Language _instance;
+
+        public static Language Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new Language();
+                return _instance;
+            }
+        }
+
 
         private const string ESPANOL_MEXICO = "es-MX";
         private const string ENGLISH_USA = "en-US";
@@ -14,14 +26,10 @@ namespace RentApp.Languages
         ResourceManager m_ResMan;
         CultureInfo m_Cul;
 
-        public Language(string SystemName)
+        public Language()
         {
-
-            //m_Cul = CultureInfo.CreateSpecificCulture(language);
-
             m_Cul = CultureInfo.CreateSpecificCulture(Thread.CurrentThread.CurrentCulture.Name);
-            string path = "RentApp.Language.Resources." + SystemName;
-
+            string path = "RentApp.Languages.Resources.RentApp";
             m_ResMan = new ResourceManager(path, typeof(Language).Assembly);
         }
 
@@ -32,7 +40,7 @@ namespace RentApp.Languages
             {
                 label = m_ResMan.GetString(key, m_Cul);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 label = m_ResMan.GetString("LANGUAGE_LABEL_NOT_FOUND", m_Cul);
@@ -80,9 +88,7 @@ namespace RentApp.Languages
 
         public string GetLanguage()
         {
-
             return m_Cul.ToString();
-
         }
     }
 }

@@ -12,7 +12,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RentApp.DataAccessLayer\RentApp.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\RentApp.Languages\RentApp.Languages.csproj" />
+    <ProjectReference Include="..\RentApp.Models\RentApp.Models.csproj" />
     <ProjectReference Include="..\RentApp.Repository\RentApp.Repository.csproj" />
+    <ProjectReference Include="..\RentApp.ViewModels\RentApp.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
